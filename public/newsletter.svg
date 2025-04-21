@@ -1,0 +1,37 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="24" fill="#EFF6FF"/>
+
+  <g transform="translate(40, 50)">
+    <!-- Newsletter Slide Up -->
+    <rect id="newsletter" x="20" y="60" width="80" height="60" rx="6" fill="#3B82F6">
+      <animate attributeName="y" from="60" to="0" dur="1s" fill="freeze" />
+    </rect>
+
+    <!-- White Title -->
+    <rect x="30" y="15" width="60" height="16" rx="4" fill="#FFFFFF">
+      <animate attributeName="opacity" from="0" to="1" begin="1s" dur="0.5s" fill="freeze"/>
+    </rect>
+
+    <!-- Lines -->
+    <rect x="30" y="36" width="40" height="6" rx="3" fill="#BFDBFE">
+      <animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.5s" fill="freeze"/>
+    </rect>
+    <rect x="30" y="46" width="30" height="6" rx="3" fill="#BFDBFE">
+      <animate attributeName="opacity" from="0" to="1" begin="1.4s" dur="0.5s" fill="freeze"/>
+    </rect>
+
+    <!-- Envelope Base -->
+    <rect x="0" y="60" width="120" height="60" rx="8" fill="#FFFFFF" stroke="#1E3A8A" stroke-width="2"/>
+
+    <!-- Envelope Flap -->
+    <path id="flap" d="M0 60L60 100L120 60" stroke="#1E3A8A" stroke-width="2" fill="white">
+      <animateTransform attributeName="transform"
+        type="rotate"
+        from="0 60 80"
+        to="-8 60 80"
+        dur="1s"
+        begin="0.3s"
+        fill="freeze" />
+    </path>
+  </g>
+</svg>
