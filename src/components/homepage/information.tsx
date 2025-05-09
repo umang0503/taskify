@@ -23,7 +23,7 @@ export default function Information() {
   ];
 
   return (
-    <div className="flex flex-col gap-10 w-full h-full py-10 px-6 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600">
+    <div className="flex flex-col gap-10 w-full h-screen py-10 px-6 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600">
       <div className="flex flex-col gap-2 text-center">
         <h1 className="text-4xl font-extrabold text-white mb-4">Do more with Taskify</h1>
         <p className="text-lg text-white">
