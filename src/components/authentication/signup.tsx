@@ -1,9 +1,5 @@
 "use client";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { auth } from "../../../firebase/firebaseauth";
-import { UserAuthContext } from "../../app/context"; // Adjust the path based on your project structure
-import { useContext } from "react";
-import { AuthContext } from "@/app/context";
+import { UserAuthContext } from "../../app/context"; 
 import { useRouter } from "next/navigation";
 export default function SignUpPage() {
     const router = useRouter();
@@ -31,7 +27,7 @@ export default function SignUpPage() {
         </div>
 
         {/* Centered Signup Form */}
-        <div className="flex flex-1 justify-center items-center ">
+        <div className="flex flex-1 justify-center m-32 ">
           <div className="w-full max-w-md">
             <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
 

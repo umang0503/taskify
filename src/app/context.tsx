@@ -1,13 +1,9 @@
 "use client"
-import { Children, createContext, use, useContext, useEffect, useState } from "react"
+import {  createContext, useContext, useEffect, useState } from "react"
 import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut, User } from "firebase/auth";
 import { auth } from "../../firebase/firebaseauth";
-
-
 const UserContext= createContext({})
-
 import { ReactNode } from "react";
-import router from "next/router";
 
 export const AuthContext = ({ children }: { children: ReactNode }) => {
 
